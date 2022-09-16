@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <!--    <com.google.android.material.appbar.MaterialToolbar-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        style="@style/toolbarStyle"-->
+    <!--        app:title="Add Shop" />-->
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/etRemarks"
+        android:padding="6dp">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="SKU"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeListHeader"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Quantity"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeListHeader"
+
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Facing"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeListHeader"
+
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Prices"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeListHeader"
+
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="Closing"
+                    android:visibility="gone"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txtSizeListHeader"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBrandList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants"
+                android:scrollbars="vertical"
+                android:background="@color/icons"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/etRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSaveData"
+        android:background="@drawable/edittext_round_corner"
+        android:hint="Enter Remarks"
+        android:inputType="textImeMultiLine"
+        android:padding="5dp"
+        />
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:text="Save"
+        android:textSize="@dimen/txtSize" />
+</RelativeLayout>

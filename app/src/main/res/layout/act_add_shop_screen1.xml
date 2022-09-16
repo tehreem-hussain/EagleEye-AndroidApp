@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#FCFCFC"
+    android:padding="10dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbarStyle"
+        app:title="Confirm Appointment"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lat:"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtLat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Long:"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtLng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Timestamp:"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imgShop"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:elevation="10dp"
+                android:scaleType="center"
+                android:src="@drawable/member_ic_camera" />
+
+
+            <EditText
+                android:id="@+id/edit_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shop Name"
+                android:inputType="text"
+                app:counterEnabled="true"
+                app:counterMaxLength="100"
+                app:errorEnabled="true" />
+
+            <EditText
+                android:id="@+id/edit_dsr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter DSR"
+                android:inputType="textEmailAddress" />
+
+
+            <EditText
+                android:id="@+id/edit_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Address"
+                android:inputType="textLongMessage" />
+
+            <EditText
+                android:id="@+id/edit_addressDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address Detail"
+                android:inputType="text" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Select Category"
+                android:textSize="@dimen/txtSize" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="@dimen/txtSize">
+
+                <RadioButton
+                    android:id="@+id/radioRS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Retail"
+                    android:textSize="@dimen/txtSize" />
+
+                <RadioButton
+                    android:id="@+id/radioWS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Wholesale"
+                    android:textSize="@dimen/txtSize" />
+
+                <RadioButton
+                    android:id="@+id/radioCS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Convenience Store"
+                    android:textSize="@dimen/txtSize"
+
+                    />
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:text="Next"
+                android:textColor="@color/icons"
+                android:textSize="@dimen/txtSize" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

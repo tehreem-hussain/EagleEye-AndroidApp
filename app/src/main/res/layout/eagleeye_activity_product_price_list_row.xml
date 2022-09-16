@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/tvProDesc"
+        android:textSize="@dimen/txtSizeProdDesc"
+        android:textColor="@color/primary_text"
+        android:text="POMACE OLIVE OIL  1 LTR BOTTLE (1 X 6)"
+
+        />
+    <TextView
+        android:id="@+id/tvInvoicePrice"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text="13156.9664"
+        android:textSize="@dimen/txtSizeProdDesc"
+        android:textColor="@color/primary_text"
+        />
+    <TextView
+        android:id="@+id/tvTradePrice"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="@dimen/txtSizeProdDesc"
+        android:textColor="@color/primary_text"
+        android:text="4550.26455"
+        />
+
+    <TextView
+        android:id="@+id/tvRetailPrice"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="@dimen/txtSizeProdDesc"
+        android:textColor="@color/primary_text"
+        android:text="13156.9664"
+        />
+
+
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/secondary_text"
+        />
+</LinearLayout>

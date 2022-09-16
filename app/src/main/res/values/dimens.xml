@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="txtSize">16sp</dimen>
+    <dimen name="txtSizeListHeader">14sp</dimen>
+    <dimen name="txtSizeListBox">14sp</dimen>
+    <dimen name="txtSizeSKU">12sp</dimen>
+    <dimen name="txtSizeProdDesc">12sp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

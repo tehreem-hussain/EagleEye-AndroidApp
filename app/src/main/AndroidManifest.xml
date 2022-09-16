@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akuhs.project.eagleeye.dalda">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".project.receiver.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".project.activities.store.ActViewStockShops"></activity>
+        <activity
+            android:name=".project.activities.store.ActStoreDashboard"
+            android:theme="@style/AppTheme.WithoutActionBar"></activity>
+        <activity android:name=".project.receiver.MainActivity" />
+        <activity
+            android:name=".project.activities.ActSplash"
+            android:theme="@style/AppTheme.WithoutActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".project.activities.ActCameraLocation"
+            android:parentActivityName=".project.activities.DashBoardActivity" />
+        <activity
+            android:name=".project.activities.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.WithoutActionBar"></activity>
+        <activity
+            android:name=".project.activities.DashBoardActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".project.activities.AddBrandShopActivity" />
+        <activity android:name=".project.activities.ActAddShopData" />
+        <activity
+            android:name=".project.activities.ActViewShop"
+            android:parentActivityName=".project.activities.DashBoardActivity" />
+        <activity
+            android:name=".project.activities.ActViewProductPriceList"
+            android:parentActivityName=".project.activities.DashBoardActivity" />
+        <activity android:name=".project.activities.ActLogin"></activity>
+        <activity
+            android:name=".project.activities.store.ActUserAttendance"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".project.activities.store.ActAddStockPosition"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".project.activities.store.ActStoreOfficerAddShop"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".project.activities.trademarketing.ActAddTradeMarketing"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+<activity
+            android:name=".project.activities.store.ActUpdateStockPosition"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+<activity
+            android:name=".project.activities.trademarketing.ActViewTMShops"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".project.activities.trademarketing.ActUpdateTradeMarketing"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+
+        <service android:name=".project.services.FetchAddressIntentService" /> <!-- <receiver -->
+        <!-- android:name=".project.receiver.ConnectivityReceiver" -->
+        <!-- android:enabled="true"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

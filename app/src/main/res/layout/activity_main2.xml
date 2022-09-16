@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+</ScrollView>
+
+<!--    <android.support.constraint.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:focusable="true"-->
+<!--        android:focusableInTouchMode="true">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/appname"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:text="MyApp"-->
+<!--            android:textColor="@color/colorBlackFont"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.5"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.2"/>-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textview_betterexperience"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:text=""-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/appname"/>-->
+
+
+<!--        -->
+<!--        <android.support.v4.view.ViewPager-->
+<!--            android:id="@+id/viewpager"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawablePadding="8dp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="48dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:hint="Username"-->
+<!--            android:textSize="14dp"-->
+<!--            android:textCursorDrawable="@drawable/cursor_color"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.5"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/textview_betterexperience"-->
+<!--            app:layout_constraintWidth_percent=".75"/>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintVertical_bias="1">-->
+
+<!--            <View-->
+<!--                android:id="@+id/divider_bottom"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:background="@color/dividerColor"-->
+<!--                android:layout_alignParentTop="true"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textview_newaccount"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:text="Create a new account"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--        <androidx.viewpager2.widget.ViewPager2-->
+<!--            android:layout_width="409dp"-->
+<!--            android:layout_height="729dp"-->
+<!--            tools:layout_editor_absoluteX="1dp"-->
+<!--            tools:layout_editor_absoluteY="1dp" />-->
+
+
+<!--    </android.support.constraint.ConstraintLayout>-->
